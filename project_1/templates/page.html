@@ -41,6 +41,9 @@
 <body>
 
     <h1>Python Code Editor</h1>
+    <!-- Button to run the code -->
+    <button id="run" disabled>Run Code</button> <!-- Initially disabled -->
+
     <div class="container">
         <!-- Text area for the CodeMirror editor -->
         <div id="code-editor">
@@ -64,7 +67,7 @@ print("Hello, World!")
             <label>
                 <input type="radio" name="answer" value="World!"> World!
             </label>
-            <button id="run" disabled>Run Code</button> <!-- Initially disabled -->
+            <button id="submit-answer">Submit Answer</button> <!-- New button to submit the answer -->
         </div>
     </div>
 
@@ -103,12 +106,15 @@ print("Hello, World!")
             });
         };
 
-        // Enable the run button when an answer is selected
-        document.querySelectorAll('input[name="answer"]').forEach((input) => {
-            input.addEventListener('change', function() {
-                document.getElementById("run").disabled = false; // Enable the button
-            });
-        });
+        // Handling the Submit Answer button click
+        document.getElementById("submit-answer").onclick = function() {
+            var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+            if (selectedAnswer && selectedAnswer.value === "Hello, World!") {
+                document.getElementById("run").disabled = false; // Enable the Run Code button
+            } else {
+                alert("Incorrect answer. Please try again.");
+            }
+        };
     </script>
 </body>
 </html>
