@@ -2,16 +2,10 @@
 
 /* Test style to see if CSS is loading properly */
 body {
-    background-color: #f8f9fa; /* Light background color */
+    background-color: #f8f9fa;      /* Light background color */
     font-family: Arial, sans-serif; /* Sets the font for the body */
-    padding: 25px; /* Adds some space around the content */
-}
-
-/* Flex container for title and button */
-.header {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center vertically */
-    margin-bottom: 20px; /* Space between header and content */
+    padding: 25px;                  /* Adds some space around the content */
+    display: flex;                  /* Use flexbox for layout */
 }
 
 /* Style for the CodeMirror editor */
@@ -39,10 +33,11 @@ body {
 }
 
 /* Style for the question box */
-#question-window {
+#question-container {
     border: 1px solid #007bff; /* Border color */
     border-radius: 4px; /* Rounded corners */
     padding: 15px; /* Add some padding */
+    background-color: #ffffff; /* Background color */
     margin-left: 20px; /* Space between code editor and question box */
     flex: 1; /* Allow it to grow */
     height: 200px; /* Same height as CodeMirror */
@@ -52,12 +47,12 @@ body {
 
 /* Style for the question text */
 #question {
-    margin-bottom: 20px; /* Space between question and answers */
+    margin-bottom: 10px; /* Space between question and answers */
 }
 
 /* Style for the answer options */
 .answer-option {
-    margin: 10px 0; /* Space between answer options */
+    margin: 5px 0; /* Space between answer options */
 }
 
 /* Style for the submit button */
@@ -66,17 +61,6 @@ body {
     background-color: #007bff; /* Button color */
     color: #ffffff; /* Button text color */
     border: none; /* Remove default border */
-    border-radius: 4px; /* Rounded corners */
-    padding: 10px; /* Padding inside the button */
-    cursor: pointer; /* Pointer cursor on hover */
-}
-
-/* Adjust Run Code button */
-#run {
-    height: 40px; /* Set a specific height for the button */
-    margin-left: 10px; /* Space between title and button */
-}
-
     border-radius: 4px; /* Rounded corners */
     padding: 10px; /* Padding inside the button */
     cursor: pointer; /* Pointer cursor on hover */
