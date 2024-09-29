@@ -2,15 +2,12 @@
 
 /* Test style to see if CSS is loading properly */
 body {
-    background-color: #ffdddd;  /* Light red background for testing */
-}
-
-body {
+    background-color: #f8f9fa; /* Light background color */
     font-family: Arial, sans-serif; /* Sets the font for the body */
-    padding: 25px;                  /* Adds some space around the content */
-    background-color: #f8f9fa;      /* Light background color */
+    padding: 25px; /* Adds some space around the content */
 }
 
+/* CodeMirror styles */
 .CodeMirror {
     border: 2px solid #007bff; /* Adjust the border as needed */
     border-radius: 4px; /* Adds rounded corners */
@@ -22,4 +19,15 @@ body {
 .CodeMirror-scroll {
     overflow: auto; /* Allow scrolling */
     height: 200px; /* Set a height for the editor */
+}
+
+/* Output window styles */
+#output {
+    border: 1px solid #007bff; /* Border to match the CodeMirror */
+    border-radius: 4px; /* Adds rounded corners */
+    height: 100px; /* Height of the output window */
+    overflow-y: auto; /* Vertical scrollbar for overflow */
+    padding: 10px; /* Padding for better readability */
+    background-color: #ffffff; /* White background for output */
+    font-family: monospace; /* Monospace font for output */
 }
