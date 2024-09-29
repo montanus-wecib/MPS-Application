@@ -29,18 +29,15 @@ body {
     height: 100px; /* Set the height of the console */
     overflow-y: auto; /* Add vertical scrollbar */
     padding: 10px; /* Add some padding */
-    background-color: #ffffff; /* Background color */
 }
 
 /* Style for the question box */
-#question-container {
+#question-window {
     border: 1px solid #007bff; /* Border color */
     border-radius: 4px; /* Rounded corners */
     padding: 15px; /* Add some padding */
-    background-color: #ffffff; /* Background color */
-    margin-left: 20px; /* Space between code editor and question box */
     flex: 1; /* Allow it to grow */
-    height: 200px; /* Same height as CodeMirror */
+    height: auto; /* Allow the height to adjust */
     display: flex;
     flex-direction: column; /* Align items vertically */
 }
