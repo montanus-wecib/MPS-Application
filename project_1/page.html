@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Evaluation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/python/python.min.js"></script>
 </head>
 <body>
     <h1>Python Code Evaluation</h1>
-    <textarea id="codeInput" rows="10" cols="50" placeholder="Write your Python code here..."></textarea><br>
+    <textarea id="codeInput"></textarea><br>
     <button id="submitCode">Run Code</button>
     <pre id="output"></pre>
 
     <script>
+        // Initialize CodeMirror
+        const editor = CodeMirror.fromTextArea(document.getElementById("codeInput"), {
+            lineNumbers: true,
+            mode: "text/x-python",
+            theme: "default",
+            tabSize: 4,
+            indentWithTabs: true
+        });
+
         document.getElementById("submitCode").onclick = function() {
-            const code = document.getElementById("codeInput").value;
+            const code = editor.getValue();
 
             fetch('/evaluate', {
                 method: 'POST',
@@ -33,3 +45,4 @@
     </script>
 </body>
 </html>
+
