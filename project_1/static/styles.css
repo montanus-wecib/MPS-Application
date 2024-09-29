@@ -22,7 +22,7 @@ body {
 }
 
 /* Output window styles */
-#output {
+#console {
     border: 1px solid #007bff; /* Border to match the CodeMirror */
     border-radius: 4px; /* Adds rounded corners */
     height: 20px; /* Height of the output window */
