@@ -1,6 +1,14 @@
 /* styles.css */
+
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the body */
+    padding: 20px;                  /* Adds some space around the content */
+    background-color: #f8f9fa;      /* Light background color */
+}
+
 .CodeMirror {
-    border: 1px solid #ddd; /* Adjust the border as needed */
+    border: 2px solid #007bff; /* Adjust the border as needed */
+    border-radius: 4px; /* Adds rounded corners */
     height: auto; /* Allow the height to adjust */
     font-family: monospace; /* Set a monospace font */
 }
