@@ -57,7 +57,7 @@ body {
 
 /* Style for the submit button */
 #submit-answer {
-    margin-top: auto; /* Push it to the bottom */
+    margin-top: 20px; /* Push it to the bottom */
     background-color: #007bff; /* Button color */
     color: #ffffff; /* Button text color */
     border: none; /* Remove default border */
