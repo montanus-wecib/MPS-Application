@@ -1,5 +1,10 @@
 /* styles.css */
 
+/* Test style to see if CSS is loading properly */
+body {
+    background-color: #ffdddd;  /* Light red background for testing */
+}
+
 body {
     font-family: Arial, sans-serif; /* Sets the font for the body */
     padding: 20px;                  /* Adds some space around the content */
