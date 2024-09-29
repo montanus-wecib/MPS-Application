@@ -39,9 +39,27 @@ print("Hello, World!")
         // Handling the Run button click
         document.getElementById("run").onclick = function() {
             var code = editor.getValue();
-            // Here you can add the functionality to run the Python code
+        
+            // Send code to Flask server
+            fetch('/run_code', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ code: code })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display the output in the console div
+                document.getElementById("console").textContent = data.output;
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        };
+
             // Simulating output for now
-            var output = "You would run this code:\n" + code; // Placeholder action
+            // var output = "You would run this code:\n" + code; // Placeholder action
             
             // Display the output in the console div
             document.getElementById("console").textContent = output; // Displaying the output
