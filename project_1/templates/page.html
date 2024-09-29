@@ -11,21 +11,19 @@
 </head>
 <body>
 
-    <div id="editor-container">
-        <h1>Python Code Editor</h1>
-        <button id="run">Run Code</button> <!-- Moved button to the top left -->
-        <!-- Write any starter code inside of the text area below or leave blank -->
-        <textarea id="code" name="code">
+    <h1>Python Code Editor</h1>
+    <!-- Button to run the code -->
+    <button id="run">Run Code</button>
+    <!-- Text area for the CodeMirror editor -->
+    <textarea id="code" name="code">
 # Write your Python code here
 print("Hello, World!")
-        </textarea>
-    </div>
+    </textarea>
+    
+    <!-- Output console to display code results -->
+    <div id="console"></div> <!-- Updated ID from "output" to "console" -->
 
-    <div id="output-panel">
-        <h2>Output</h2>
-        <pre id="output"></pre> <!-- Placeholder for code output -->
-    </div>
-
+    <!-- Link to CodeMirror JS libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/python/python.min.js"></script>
     <script>
@@ -38,13 +36,12 @@ print("Hello, World!")
             viewportMargin: Infinity,
         });
 
-        // Handling the Run button
+        // Handling the Run button click
         document.getElementById("run").onclick = function() {
             var code = editor.getValue();
-            // Display the code output in the output panel
-            document.getElementById("output").textContent = "You would run this code:\n" + code; // Placeholder action
+            // Here you can add the functionality to run the Python code
+            alert("You would run this code:\n" + code); // Placeholder action
         };
     </script>
 </body>
 </html>
-
