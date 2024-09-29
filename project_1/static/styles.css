@@ -1,5 +1,12 @@
+/* styles.css */
 .CodeMirror {
-    border: 1px solid #ccc; /* Light gray border */
-    height: auto; /* Allows for automatic height adjustment */
-    /* You can customize border color and width as needed */
+    border: 1px solid #ddd; /* Adjust the border as needed */
+    height: auto; /* Allow the height to adjust */
+    font-family: monospace; /* Set a monospace font */
+}
+
+/* Optional: Adjust the scrollbar */
+.CodeMirror-scroll {
+    overflow: auto; /* Allow scrolling */
+    height: 200px; /* Set a height for the editor */
 }
