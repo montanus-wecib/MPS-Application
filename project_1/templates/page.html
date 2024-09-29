@@ -40,7 +40,11 @@ print("Hello, World!")
         document.getElementById("run").onclick = function() {
             var code = editor.getValue();
             // Here you can add the functionality to run the Python code
-            alert("You would run this code:\n" + code); // Placeholder action
+            // Simulating output for now
+            var output = "You would run this code:\n" + code; // Placeholder action
+            
+            // Display the output in the console div
+            document.getElementById("console").textContent = output; // Displaying the output
         };
     </script>
 </body>
