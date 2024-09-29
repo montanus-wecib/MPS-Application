@@ -1,0 +1,5 @@
+.CodeMirror {
+    border: 1px solid #ccc; /* Light gray border */
+    height: auto; /* Allows for automatic height adjustment */
+    /* You can customize border color and width as needed */
+}
