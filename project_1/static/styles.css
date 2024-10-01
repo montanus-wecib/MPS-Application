@@ -6,7 +6,7 @@
     margin-bottom: 20px;
 }
 
-#banner {
+.banner {
     width: 100%; /* Ensure the image scales to the full width of the container */
     height: auto;
     object-fit: cover;
