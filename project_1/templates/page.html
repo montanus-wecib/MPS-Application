@@ -15,12 +15,17 @@
     <div id="banner-container">
         <img src="https://montanus-wecib.github.io/MPS-Application/project_1/static/Web Banner.png" alt="Web Banner" class="banner">
     </div>
-
-    <!-- Button to run the code -->
-    <button id="run" disabled>Run Code</button> <!-- Initially disabled -->
+    
+    <!-- Navigation Bar -->
+    <div id="navbar">
+        <!--<button id="example-button" class="button">Example Button</button>-->
+        <input type="text" placeholder="Type here...">
+        <a href="#" class="navbar-link">Link 1</a>
+        <a href="#" class="navbar-link">Link 2</a>
+    </div>
 
     <!-- Parent container for both code editor/console and Q&A window -->
-    <div class="editor-question-container">
+    <div class="editor-question-video-scoring-container">
         <!-- Code editor and console container -->
         <div id="code-console-container">
             <div id="code-editor">
@@ -32,20 +37,51 @@ print("Hello, World!")
             <!-- Output console to display code results -->
             <div id="console"></div>
         </div>
-
-        <!-- Question window -->
-        <div id="question-window">
-            <div id="question">What is the output of the following code?</div>
-            <label>
-                <input type="radio" name="answer" value="Hello, World!"> Hello, World!
-            </label>
-            <label>
-                <input type="radio" name="answer" value="Hello"> Hello
-            </label>
-            <label>
-                <input type="radio" name="answer" value="World!"> World!
-            </label>
-            <button id="submit-answer">Submit Answer</button> <!-- New button to submit the answer -->
+        
+        <div class="question-video-container">
+            <!-- Question window -->
+            <div id="question-window">
+                <div id="question">What is the output of the following code? here is a second line</div>
+                <label>
+                    <input type="radio" name="answer" value="Hello, World!"> Hello, World!
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="Hello"> Hello
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="World!"> World!
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="Error"> Error!
+                </label>
+                <div id="buttons-container">
+                    <!-- New button to submit the answer -->
+                    <button id="submit-answer" class="button">Submit</button>
+                    <!-- Button to run the code -->
+                    <button id="run" class="button" disabled>Run Code</button> <!-- Initially disabled -->
+                </div>
+            </div>
+            
+            <!-- YouTube video container -->
+            <div id="youtube-container">
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/I6JF6JCTXG0" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+            
+        <div class="scoring-container">
+            <!-- Scoring panel -->
+            <div id="scoring-panel">
+                <h3>XP Overview</h3>
+                <p>Total XP: <span id="total-xp">1200</span></p>
+                <p>Category 1 XP: <span id="category-1-xp">200</span></p>
+                <p>Category 2 XP: <span id="category-2-xp">300</span></p>
+                <p>Category 3 XP: <span id="category-3-xp">250</span></p>
+                <p>Category 4 XP: <span id="category-4-xp">150</span></p>
+                <p>Category 5 XP: <span id="category-5-xp">300</span></p>
+                <p>Time Spent: <span id="time-spent">45 minutes</span></p>
+            </div>
         </div>
     </div>
 
