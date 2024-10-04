@@ -1,7 +1,7 @@
 {
-  "questions": [
+  "questions":
     {
-      "ID": "PCAP1",
+      "PCAP1": {
       "Standard": 3.2,
       "Tags": ["functions", "recursion"],
       "Code": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)",
@@ -11,10 +11,8 @@
       "Distractor2": "100",
       "Distractor3": "60",
       "Video": "https://www.youtube.com/embed/I6JF6JCTXG0",
-      "Difficulty": 2.5
-    },
-    {
-      "ID": "PCAP2",
+      "Difficulty": 2.5},
+      "PCAP2": {
       "Standard": 1.1,
       "Tags": ["variables", "data types"],
       "Code": "x = 5\ny = '5'\nz = x + int(y)",
@@ -24,7 +22,6 @@
       "Distractor2": "5",
       "Distractor3": "Error",
       "Video": "https://www.example.com/video2",
-      "Difficulty": 1.5
+      "Difficulty": 1.5}
     }
-  ]
 }
